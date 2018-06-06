@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="backup\WebPage1.html" />
+    <Content Include="Dockerfile" />
     <Content Include="drawingCognitive\static\content\style.css" />
     <Content Include="drawingCognitive\templates\train.html" />
     <Content Include="drawingCognitive\templates\result.html" />
@@ -81,6 +82,7 @@
     <Content Include="drawingCognitive\static\scripts\respond.min.js" />
     <Content Include="drawingCognitive\static\scripts\_references.js" />
     <Content Include="drawingCognitive\templates\index.html" />
+    <Content Include="docker-compose.yaml" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />

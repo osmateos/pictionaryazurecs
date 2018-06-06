@@ -32,4 +32,4 @@ def runprediction(picture,idfile):
         text_file.write(json.dumps(mylist, indent=2))
     return (mylist)
 
-runprediction('face.jpeg','112')
+#runprediction('face.jpeg','112')

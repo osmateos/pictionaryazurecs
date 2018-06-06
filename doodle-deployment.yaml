@@ -1,0 +1,38 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: doodle
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: doodle
+    spec:
+      containers:
+      - name: doodle
+        image: osmateosazure.azurecr.io/doodle:latest
+        ports:
+        - containerPort: 5555
+          name: doodle
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: doodle
+spec:
+  ports:
+  - port: 5555
+  selector:
+    app: doodle
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: doodle
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: doodle
