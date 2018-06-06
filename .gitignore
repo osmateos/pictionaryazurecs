@@ -18,6 +18,8 @@
 x64/
 x86/
 bld/
+backup/
+__pycache__/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
